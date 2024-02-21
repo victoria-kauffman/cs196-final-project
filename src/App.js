@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import * as terms from './term-content/Terms.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='Terms'>
+      <terms.PrintTerm></terms.PrintTerm>
+      <terms.CommentTerm></terms.CommentTerm>
+      <terms.VariableTerm></terms.VariableTerm>
+      <terms.IfTerm></terms.IfTerm>
+      <terms.SwitchTerm></terms.SwitchTerm>
+      <terms.ForTerm></terms.ForTerm>
+      <terms.WhileTerm></terms.WhileTerm>
+      <terms.MiscIterationTerm></terms.MiscIterationTerm>
+      <terms.FunctionTerm></terms.FunctionTerm>
+      <terms.RecursionTerm></terms.RecursionTerm>
+      <terms.OOPTerm></terms.OOPTerm>
+      <terms.ClassTerm></terms.ClassTerm>
     </div>
   );
 }
