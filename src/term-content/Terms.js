@@ -1,24 +1,25 @@
-import { func } from "prop-types";
 import TermPopup from "./term-component/TermPopup";
-import TermCode from "./TermCode";
+import TermCode from "./BlockCode";
 
 export function PrintTerm() {
-    return (
-        <div>
-        <TermPopup name='Print Statements'
-            text='print("Hello, World")' 
-            language='python' />
-        </div>
-    )
+    return <TermPopup name='Print Statements'
+                code={'print("Hello, World")'}/>
+    
 }
 export function CommentTerm() {
-    return <TermPopup name='Comments' />
+    return <TermPopup name='Comments' 
+                code={'# This is a Python single-line comment\n' +
+                        '\'\'\' And this\nis a\nPython multi-line comment \'\'\''}/>
 }
 export function VariableTerm() {
-    return <TermPopup name='Variables' />
+    return <TermPopup name='Variables'
+                code={'python_var = 61'} />
 }
 export function IfTerm() {
-    return <TermPopup name='If Statements' />
+    return <TermPopup name='If Statements'
+                code={'if a:\n\tprint("a was true!")\n' +
+                        'elif b:\n\tprint("a wasn\'t true, but b was true!"' +
+                        '\nelse:\n\tprint("Neither a nor b was true!"'} />
 }
 export function SwitchTerm() {
     return <TermPopup name='Switch Statements' />

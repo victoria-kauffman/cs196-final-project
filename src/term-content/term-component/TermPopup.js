@@ -1,6 +1,6 @@
 import React from "react";
 import Popup from "reactjs-popup";
-import TermCode from "../TermCode";
+import TermCode from "../BlockCode";
 import 'reactjs-popup/dist/index.css';
 
 export default function TermPopup(props) {
@@ -14,7 +14,7 @@ export default function TermPopup(props) {
                 <div className='Popup-Content'>
                     <h1 className='Term'>{props.name}</h1>
                     <TermCode language='python' 
-                        text='print("Hello, World")'/>
+                        text={props.code}/>
                 </div>
                 <div>
                 <button onClick={() => close()}>
