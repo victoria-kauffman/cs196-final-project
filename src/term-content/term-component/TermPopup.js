@@ -1,7 +1,7 @@
 import React from "react";
 import Popup from "reactjs-popup";
-import TermCode from "../BlockCode";
 import 'reactjs-popup/dist/index.css';
+import { setCodeBlock } from "./TermPopupHelper";
 
 export default function TermPopup(props) {
     return (
@@ -13,8 +13,8 @@ export default function TermPopup(props) {
             <div className='Term-Popup'>
                 <div className='Popup-Content'>
                     <h1 className='Term'>{props.name}</h1>
-                    <TermCode language='python' 
-                        text={props.code}/>
+                    {code(props.id)}
+                    { codeBlock }
                 </div>
                 <div>
                 <button onClick={() => close()}>
@@ -25,5 +25,17 @@ export default function TermPopup(props) {
             )
         }
         </Popup>
+    )
+}
+
+function code(termID) {
+    codeText = setCodeBlock(e.target.value, termID);
+    return (
+        <select
+            onChange={e => { setCodeBlock(e.target.value, codeText)} }>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="c++">C++</option>
+        </select>
     )
 }

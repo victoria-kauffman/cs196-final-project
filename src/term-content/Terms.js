@@ -1,9 +1,10 @@
 import TermPopup from "./term-component/TermPopup";
 import TermCode from "./BlockCode";
+import PrintBlock from "./Terms/PrintTerm"
 
 export function PrintTerm() {
-    return <TermPopup name='Print Statements'
-                code={'print("Hello, World")'}/>
+    return <TermPopup name='Print Statements' id='print'
+                code={PrintBlock}/>
     
 }
 export function CommentTerm() {
