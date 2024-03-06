@@ -6,6 +6,7 @@ function App() {
     <div className='Terms'>
       <terms.PrintTerm></terms.PrintTerm>
       <terms.CommentTerm></terms.CommentTerm>
+      {/* 
       <terms.VariableTerm></terms.VariableTerm>
       <terms.IfTerm></terms.IfTerm>
       <terms.SwitchTerm></terms.SwitchTerm>
@@ -15,7 +16,7 @@ function App() {
       <terms.FunctionTerm></terms.FunctionTerm>
       <terms.RecursionTerm></terms.RecursionTerm>
       <terms.OOPTerm></terms.OOPTerm>
-      <terms.ClassTerm></terms.ClassTerm>
+      <terms.ClassTerm></terms.ClassTerm> */}
     </div>
   );
 }
