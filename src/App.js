@@ -6,14 +6,16 @@ function App() {
     <div className='Terms'>
       <terms.PrintTerm></terms.PrintTerm>
       <terms.CommentTerm></terms.CommentTerm>
-      {/* 
+       
       <terms.VariableTerm></terms.VariableTerm>
       <terms.IfTerm></terms.IfTerm>
       <terms.SwitchTerm></terms.SwitchTerm>
       <terms.ForTerm></terms.ForTerm>
       <terms.WhileTerm></terms.WhileTerm>
-      <terms.MiscIterationTerm></terms.MiscIterationTerm>
       <terms.FunctionTerm></terms.FunctionTerm>
+
+      {/*
+      <terms.MiscIterationTerm></terms.MiscIterationTerm>
       <terms.RecursionTerm></terms.RecursionTerm>
       <terms.OOPTerm></terms.OOPTerm>
       <terms.ClassTerm></terms.ClassTerm> */}
